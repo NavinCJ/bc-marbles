@@ -1,9 +1,5 @@
 FROM node:8.4.0-wheezy
 
-ENV http_proxy http://proxy.pershing.com:8080
-ENV https_proxy http://proxy.pershing.com:8080
-ENV no_proxy localhost,127.0.0.1,example.com,bnymellon.net
-
 WORKDIR /app/marbles
 
 COPY package.json .
